@@ -1,0 +1,4 @@
+
+PACKAGE = 'corto/net/cities'
+
+require "#{ENV['CORTO_BUILD']}/package"

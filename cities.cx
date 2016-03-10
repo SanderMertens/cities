@@ -1,0 +1,15 @@
+#package /corto/net/cities
+
+class Country::
+    name: string
+    region: string
+    subregion: string
+
+class City::
+    name: string
+    coord: core/position
+
+class Connector: core/replicator, hidden::
+    alias mount: replicator/mount
+    int16 construct()
+    resultIter onRequest(core/request request)
